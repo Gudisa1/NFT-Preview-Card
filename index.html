@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @media (min-width: 375px) {
+        body {
+          background-color: hsl(217, 54%, 11%);
+        }
+      }
+      .attribution {
+        font-size: 11px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: hsl(217, 54%, 11%);
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .nft-section {
+        height: 450px;
+        width: 250px;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 12px;
+      }
+      .equilibrium-image {
+        height: 200px;
+        width: 200px;
+        margin: 10px 10px 0px 25px;
+        border-radius: 12px;
+      }
+      h1 {
+        font-size: 20px;
+        margin-left: 30px;
+        font-family: Outfit;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        font-style: normal;
+      }
+      p {
+        font-size: 16px;
+        font-family: Outfit;
+        font-weight: 600;
+        margin-left: 30px;
+        color: hsl(215, 32%, 27%);
+      }
+      .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 16px;
+        font-family: Outfit;
+        font-weight: 600;
+      }
+      .etherium {
+        color: hsl(178, 100%, 50%);
+      }
+      .clock-text {
+        color: hsl(215, 32%, 27%);
+      }
+      .person {
+        display: flex;
+      }
+      .avatar {
+        height: 30px;
+        margin-left: 13px;
+      }
+      .avatar-text {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+      hr {
+        width: 85%;
+        color: hsl(216, 50%, 16%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="nft-section">
+          <img src="./image-equilibrium.jpg" alt="" class="equilibrium-image" />
+          <h1>Equilibrium #3429</h1>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+          <div class="price">
+            <h4 class="etherium">
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                  fill="#00FFF8"
+                />
+              </svg>
+              0.041 ETH
+            </h4>
+            <h4 class="clock-text">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                  fill="#8BACD9"
+                />
+              </svg>
+              3 days left
+            </h4>
+          </div>
+          <hr />
+          <div class="person">
+            <img src="./image-avatar.png" alt="" class="avatar" />
+            <p class="avatar-text">Creation of Jules Wyvern</p>
+          </div>
+        </div>
+      </div>
+      <!-- <footer>
+        <div class="">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer> -->
+    </main>
+  </body>
+</html>
